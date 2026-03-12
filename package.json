@@ -1,6 +1,6 @@
 {
     "name": "@suhailroushan/gitai",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "AI-powered Git CLI — commit, push, branch, and more with DeepSeek AI",
     "keywords": [
         "git",
