@@ -1,7 +1,6 @@
 <div align="center">
 
-<!-- Replace with your actual banner image -->
-<img src="assets/gitai-banner.png" alt="GitAI Banner" width="100%" />
+<img src="assets/gitai-banner.jpg" alt="GitAI Banner" width="100%" />
 
 <br/>
 <br/>
@@ -28,8 +27,7 @@
 
 <br/>
 
-<!-- Replace with your actual screenshot -->
-<img src="assets/gitai-demo.png" alt="GitAI Demo Screenshot" width="680" />
+<img src="assets/gitai-demo.png" alt="GitAI Demo" width="680" />
 
 </div>
 
@@ -212,11 +210,6 @@ You should see: *"Hi username! You've successfully authenticated..."*
 gitai
 ```
 
-<!-- Replace with your actual menu screenshot -->
-<div align="center">
-<img src="assets/gitai-menu.png" alt="GitAI Interactive Menu" width="640" />
-</div>
-
 <br/>
 
 ### Quick commands
@@ -375,16 +368,9 @@ The docs cover:
 
 ## 🖥️ Screenshots
 
-<!-- Replace these with your actual screenshots -->
-
 <div align="center">
 
-### Header & Repo Info
-<img src="assets/gitai-header.png" alt="GitAI Header" width="640" />
-
-<br/><br/>
-
-### AI Commit in Action
+### AI Commit & Push
 <img src="assets/gitai-ai-commit.png" alt="GitAI AI Commit" width="640" />
 
 <br/><br/>
@@ -411,14 +397,12 @@ The docs cover:
 gitai/
 ├── bin/
 │   └── gitai.sh          # Main CLI script
-├── assets/               # Screenshots and images for README
-│   ├── gitai-banner.png
+├── assets/
+│   ├── gitai-banner.jpg
 │   ├── gitai-demo.png
-│   ├── gitai-menu.png
-│   ├── gitai-header.png
 │   ├── gitai-ai-commit.png
-│   ├── gitai-security-scan.png
-│   └── gitai-docs.png
+│   ├── gitai-docs.png
+│   └── gitai-security-scan.png
 ├── package.json
 ├── LICENSE
 └── README.md
