@@ -255,8 +255,15 @@ case "${1:-}" in
     echo "  Options:"
     echo "    --docs, -d, docs   Show full Git reference (setup, SSH, commands)"
     echo "    --help, -h         Show this help"
+    echo "    --version, -v      Show version"
     echo ""
     echo "  With no options, starts the interactive menu."
+    exit 0
+    ;;
+  --version|-v)
+    GITAI_SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+    GITAI_VER=$(jq -r '.version' "${GITAI_SCRIPT_DIR}/../package.json" 2>/dev/null)
+    echo "gitai ${GITAI_VER:-1.0.0}"
     exit 0
     ;;
   --docs|-d|docs) show_git_docs; exit 0 ;;
