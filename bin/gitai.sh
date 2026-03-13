@@ -503,7 +503,7 @@ while true; do
           80)
         { [ -z "$AI_MSG" ] || [ "${AI_MSG#AI unavailable}" != "$AI_MSG" ]; } \
           && AI_MSG="chore: update project files"
-        COMMIT_MSG="${AI_MSG} • ${GIT_USER_NAME} • $(get_commit_time)"
+        COMMIT_MSG="${AI_MSG}"
         echo -e "\n  📝 ${BOLD}${COMMIT_MSG}${RESET}\n"
         git commit -m "$COMMIT_MSG" && do_push
       fi
@@ -521,7 +521,7 @@ while true; do
         if [ -z "$manual_msg" ]; then
           echo -e "  ${RED}Aborted — empty message.${RESET}"
         else
-          COMMIT_MSG="${manual_msg} • ${GIT_USER_NAME} • $(get_commit_time)"
+          COMMIT_MSG="${manual_msg}"
           echo -e "\n  📝 ${BOLD}${COMMIT_MSG}${RESET}\n"
           git commit -m "$COMMIT_MSG" && do_push
         fi
