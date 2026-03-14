@@ -83,10 +83,10 @@ npm install -g .
 
 ### Uninstall
 
-To remove GitAI from your system:
+To remove GitAI from your system, use the **same package manager** you used to install:
 
 ```bash
-# npm
+# npm (default with nvm; binary often in ~/.nvm/versions/node/*/bin/)
 npm uninstall -g @suhailroushan/gitai
 
 # pnpm
@@ -95,6 +95,8 @@ pnpm remove -g @suhailroushan/gitai
 # yarn
 yarn global remove @suhailroushan/gitai
 ```
+
+If you're not sure which one is active, run `which gitai` — if the path contains `nvm`, use **npm**; if it contains `pnpm`, use **pnpm**. If you installed with more than one manager, run the matching uninstall for each.
 
 If you installed from source with `npm install -g .`, run `npm uninstall -g @suhailroushan/gitai` from any directory.
 
