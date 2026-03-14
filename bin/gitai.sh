@@ -257,6 +257,8 @@ case "${1:-}" in
     echo "    --help, -h         Show this help"
     echo "    --version, -v      Show version"
     echo ""
+    echo "  Uninstall:  npm uninstall -g @suhailroushan/gitai"
+    echo ""
     echo "  With no options, starts the interactive menu."
     exit 0
     ;;

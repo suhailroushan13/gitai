@@ -18,6 +18,7 @@
 <br/>
 
 [Installation](#-installation) •
+[Uninstall](#uninstall) •
 [Setup](#-setup) •
 [Usage](#-usage) •
 [Features](#-features) •
@@ -77,6 +78,25 @@ git clone https://github.com/suhailroushan13/gitai.git
 cd gitai
 npm install -g .
 ```
+
+<br/>
+
+### Uninstall
+
+To remove GitAI from your system:
+
+```bash
+# npm
+npm uninstall -g @suhailroushan/gitai
+
+# pnpm
+pnpm remove -g @suhailroushan/gitai
+
+# yarn
+yarn global remove @suhailroushan/gitai
+```
+
+If you installed from source with `npm install -g .`, run `npm uninstall -g @suhailroushan/gitai` from any directory.
 
 <br/>
 
